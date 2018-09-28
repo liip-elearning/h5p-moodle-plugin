@@ -181,6 +181,9 @@ $string['reportingscorelabel'] = 'Score:';
 $string['reportingscaledscorelabel'] = 'Gradebook score:';
 $string['reportingscoredelimiter'] = 'out of';
 $string['reportingscaledscoredelimiter'] = ',';
+$string['reportingquestionsremaininglabel'] = 'questions remaining to grade';
+$string['reportsubmitgradelabel'] = 'Submit grade';
+$string['noanswersubmitted'] = 'This user hasn\'t submitted an answer to the H5P yet';
 
 // Editor.
 $string['javascriptloading'] = 'Waiting for JavaScript...';
@@ -343,6 +346,71 @@ $string['licenseV1'] = 'Version 1';
 $string['licenseCC010'] = 'CC0 1.0 Universal (CC0 1.0) Public Domain Dedication';
 $string['licenseCC010U'] = 'CC0 1.0 Universal';
 $string['licenseversion'] = 'License Version';
+$string['creativecommons'] = 'Creative Commons';
+$string['ccattribution'] = 'Attribution (CC BY)';
+$string['ccattributionsa'] = 'Attribution-ShareAlike (CC BY-SA)';
+$string['ccattributionnd'] = 'Attribution-NoDerivs (CC BY-ND)';
+$string['ccattributionnc'] = 'Attribution-NonCommercial (CC BY-NC)';
+$string['ccattributionncsa'] = 'Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)';
+$string['ccattributionncnd'] = 'Attribution-NonCommercial-NoDerivs (CC BY-NC-ND)';
+$string['ccpdd'] = 'Public Domain Dedication (CC0)';
+$string['ccpdm'] = 'Public Domain Mark (PDM)';
+$string['yearsfrom'] = 'Years (from)';
+$string['yearsto'] = 'Years (to)';
+$string['authorname'] = "Author's name";
+$string['authorrole'] = "Author's role";
+$string['editor'] = 'Editor';
+$string['licensee'] = 'Licensee';
+$string['originator'] = 'Originator';
+$string['additionallicenseinfo'] = 'Any additional information about the license';
+$string['licenseextras'] = 'License Extras';
+$string['changelog'] = 'Change Log';
+$string['question'] = 'Question';
+$string['date'] = 'Date';
+$string['changedby'] = 'Changed by';
+$string['changedescription'] = 'Description of change';
+$string['changeplaceholder'] = 'Photo cropped, text changed, etc.';
+$string['additionalinfo'] = 'Additional Information';
+$string['authorcomments'] = 'Author comments';
+$string['authorcommentsdescription'] = 'Comments for the editor of the content (This text will not be published as a part of copyright info)';
 
 // Embed.
 $string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';
+
+// Privacy.
+$string['privacy:metadata:core_files'] = 'The H5P activity stores files which have been uploaded as part of H5P content.';
+$string['privacy:metadata:core_grades'] = 'The H5P activity stores grades of users that have answered H5P content.';
+
+$string['privacy:metadata:hvp_content_user_data'] = 'Describes the current state that content is in for a user. Used to restore content to a previous state.';
+$string['privacy:metadata:hvp_content_user_data:id'] = 'The ID of the content user data relationship.';
+$string['privacy:metadata:hvp_content_user_data:user_id'] = 'The ID of the user that the data belongs to.';
+$string['privacy:metadata:hvp_content_user_data:hvp_id'] = 'The ID of the H5P content that the data belongs to.';
+$string['privacy:metadata:hvp_content_user_data:sub_content_id'] = 'Sub-content of H5P, 0 if this is not sub-content.';
+$string['privacy:metadata:hvp_content_user_data:data_id'] = 'Data type identifier.';
+$string['privacy:metadata:hvp_content_user_data:data'] = 'User data that was stored.';
+$string['privacy:metadata:hvp_content_user_data:preloaded'] = 'Flag determining if data should be pre-loaded into content.';
+$string['privacy:metadata:hvp_content_user_data:delete_on_content_change'] = 'Flag determining if data should be deleted when content changes.';
+
+$string['privacy:metadata:hvp_events'] = 'Keeps track of logged H5P events.';
+$string['privacy:metadata:hvp_events:id'] = 'The unique ID of the event.';
+$string['privacy:metadata:hvp_events:user_id'] = 'The ID of the user that performed the action.';
+$string['privacy:metadata:hvp_events:created_at'] = 'The time that the event was created.';
+$string['privacy:metadata:hvp_events:type'] = 'The type of event.';
+$string['privacy:metadata:hvp_events:sub_type'] = 'The sub-type of event, or action of event.';
+$string['privacy:metadata:hvp_events:content_id'] = 'The content ID that the action was performed on, 0 if new or no content.';
+$string['privacy:metadata:hvp_events:content_title'] = 'Title of the content.';
+$string['privacy:metadata:hvp_events:library_name'] = 'The library the event affected.';
+$string['privacy:metadata:hvp_events:library_version'] = 'The library version the event affected.';
+
+$string['privacy:metadata:hvp_xapi_results'] = 'Stores xAPI events in H5P content.';
+$string['privacy:metadata:hvp_xapi_results:id'] = 'The unique ID of the xAPI event.';
+$string['privacy:metadata:hvp_xapi_results:content_id'] = 'The ID of the content the event was performed on.';
+$string['privacy:metadata:hvp_xapi_results:user_id'] = 'The ID of the user that performed the action.';
+$string['privacy:metadata:hvp_xapi_results:parent_id'] = 'The ID of the parent of the content that this event was performed on. Null if it has no parent.';
+$string['privacy:metadata:hvp_xapi_results:interaction_type'] = 'The type of interaction.';
+$string['privacy:metadata:hvp_xapi_results:description'] = 'The description, task or question of the content that action was performed on.';
+$string['privacy:metadata:hvp_xapi_results:correct_responses_pattern'] = 'The correct answer pattern.';
+$string['privacy:metadata:hvp_xapi_results:response'] = 'The response the user sent in.';
+$string['privacy:metadata:hvp_xapi_results:additionals'] = 'Additional information that the H5P can send in.';
+$string['privacy:metadata:hvp_xapi_results:raw_score'] = 'Achieved score for the event.';
+$string['privacy:metadata:hvp_xapi_results:max_score'] = 'Max achievable score for the event.';
