@@ -91,7 +91,9 @@ $PAGE->set_heading($course->fullname);
 $PAGE->add_body_class('h5p-embed');
 $PAGE->set_pagelayout('embedded');
 $root = \mod_hvp\view_assets::getsiteroot();
-$PAGE->requires->js_call_amd('mod_hvp/embed');
+$PAGE->requires->css(new \moodle_url("{$root}/mod/hvp/embed.css"));
+$PAGE->requires->js(new \moodle_url("{$root}/mod/hvp/embed.js"));
+
 // Add H5P assets to page.
 $view->addassetstopage();
 $view->logviewed();
